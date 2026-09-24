@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lawal Sefiat Opeyemi | Frontend Developer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
     <h1>Lawal Sefiat Opeyemi</h1>
     <p>Frontend Developer | Research Specialist | Lifelong Learner</p>
     <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#goals">Learning Goals</a>
         <a href="#tech-topic">Tech Topic</a>
+        <a href="#goals">Learning Goals</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
-
 <main>
-
-    <section id="about">
+    <div class="profile-grid">
+        <section id="about" class="about-section">
         <h2>About Me</h2>
-        <img src="profile-picture.jpg" alt="Placeholder profile picture for Lawal Sefiat Opeyemi" width="200" height="200">
-        <p>
+        <div class="profile-content">
+            <div>
+            <img src="profile-picture.jpg" alt="Placeholder profile picture for Lawal Sefiat Opeyemi" width="200" height="200">
+        </div>
+        <div>
+            <p>
             Hello! My name is Lawal Sefiat Opeyemi. I am an aspiring
             frontend developer passionate about creating clean,
             accessible, and user-friendly websites.
@@ -33,6 +37,8 @@
             Git, GitHub, and React while building practical projects
             to strengthen my frontend development knowledge.
         </p>
+        </div>
+        </div>
     </section>
 
     <section id="goals">
@@ -64,7 +70,7 @@
         </article>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
         <p>
             I am open to learning opportunities, collaborations, and
@@ -77,6 +83,7 @@
             </a>
         </p>
     </section>
+    </div>
 </main>
 
 <footer>

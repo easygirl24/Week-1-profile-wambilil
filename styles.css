@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #1e3a8e;
+    color: #ffffff;
+    padding: 1.5rem 5%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0.5rem 0 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.6rem;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #2563eb;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #1e3a8a;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 50%;
+}
+
+ul {
+    padding-left: 1.5rem;
+    list-style: circle;
+}
+
+article, section li {
+    background-color: #eff6ff;
+    padding: 1rem;
+    border-left: 4px solid #2563eb;
+    border-radius: 5px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #172554;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 5%;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+/* Responsiveness */
+
+@media (min-width:768px) {
+    header {
+        padding: 2rem 5%;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .profile-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Desktop view */
+@media (min-width:1024px) {
+    main {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .profile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        align-items: start;
+
+    }
+
+    section {
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    .about-section {
+        grid-column: 1/-1;
+    }
+
+    .contact-section {
+        grid-column: 1/-1;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+}
